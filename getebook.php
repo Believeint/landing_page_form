@@ -11,7 +11,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])) {
             <title>Here is your ebook</title>
         </head>
         <body>
-            <p>Click the link below</p>
+            <p>Click the link below for your ebook</p>
             <p>https://temp-automatic.000webhostapp.com/ebook/lorem-ipsum.pdf</p>
         </body>
     </html>

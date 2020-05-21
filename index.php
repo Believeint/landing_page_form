@@ -42,10 +42,17 @@
 
     <?php
     
-    if($_POST['success']) {
-        echo "<div class='alert alert-success' role='alert'>
+    if(isset($_REQUEST['success'])) {
+    
+    if($_REQUEST['success'] == 1) {
+        echo "<div style='position:absolute; top:100px;right:0' class='alert alert-success' role='alert'>
                 o link com o ebook foi enviado ao seu email.
               </div>";
+    } else {
+        echo "<div style='position:absolute; top:100px;right:0' class='alert alert-danger' role='alert'>
+                Não foi possível enviar, tente novamente mais tarde.
+              </div>";
+    }
     }
     
     ?>
@@ -72,12 +79,12 @@
                 </div>
             </div>
         </div>
-        <img src="img/animate_icon/Ellipse_7.png" alt="" class="feature_icon_1 custom-animation1">
-        <img src="img/animate_icon/Ellipse_8.png" alt="" class="feature_icon_2 custom-animation2">
-        <img src="img/animate_icon/Ellipse_1.png" alt="" class="feature_icon_3 custom-animation3">
-        <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_4 custom-animation4">
-        <img src="img/animate_icon/Ellipse_3.png" alt="" class="feature_icon_5 custom-animation5">
-        <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_6 custom-animation6">
+        <img src="images/animate_icon/Ellipse_7.png" alt="" class="feature_icon_1 custom-animation1">
+        <img src="images/animate_icon/Ellipse_8.png" alt="" class="feature_icon_2 custom-animation2">
+        <img src="images/animate_icon/Ellipse_1.png" alt="" class="feature_icon_3 custom-animation3">
+        <img src="images/animate_icon/Ellipse_2.png" alt="" class="feature_icon_4 custom-animation4">
+        <img src="images/animate_icon/Ellipse_3.png" alt="" class="feature_icon_5 custom-animation5">
+        <img src="images/animate_icon/Ellipse_4.png" alt="" class="feature_icon_6 custom-animation6">
     </section>
 
     <section id="features" class="use_sasu padding_top">
